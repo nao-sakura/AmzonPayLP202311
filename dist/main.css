@@ -1,0 +1,15 @@
+body {
+  background: #FEEDE5;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #1E0E05; }
+
+.main {
+  max-width: 1000px;
+  margin: 0 auto; }
+
+.top {
+  max-width: 1000px;
+  margin: 0 auto; }
+
+.card {
+  border: 1px solid #F4693A; }

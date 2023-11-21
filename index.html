@@ -1,0 +1,112 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500;700;900&display=swap" rel="stylesheet">
+
+    <title>Amazon Campain LP</title>
+    <link rel="stylesheet" href="./dist/styles_dist.css">
+    <link rel="stylesheet" href="./dist/main.css">
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <script type='text/javascript'>
+        function scroll_effect() {
+          var element = document.getElementsByClassName('scroll-up');
+          if(!element) return;
+                              
+          var scrollY = window.pageYOffset;
+          var windowH = window.innerHeight;
+          var showTiming = 200; // 要素を表示するタイミング
+          for(var i = 0; i < element.length; i++) { 
+            var elemClientRect = element[i].getBoundingClientRect(); 
+            var elemY = scrollY + elemClientRect.top; 
+            if(scrollY > elemY - windowH + showTiming) {
+              element[i].classList.add('is-show');
+            }
+          }
+        }
+        window.addEventListener('scroll', scroll_effect); // スクロール時に実行
+        </script>
+</head>
+<body>
+    <header>
+        <div class="top">
+            <img src="./AmazonCp202311-img/main.svg" class="lg:hidden main-image">
+            <img src="./AmazonCp202311-img/main.svg"  class="m-auto hidden lg:block main-image">
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="section">
+            <div class="px-4 py-12 md:py-28 md:flex justify-center items-end gap-5 m-auto">
+                <div class="flex-col justify-start items-start gap-4 flex">
+                <div class="">
+                <div class="text-[32px] md:text-[48px] font-bold ">キャンペーン概要</div>
+                <div class="text-text-Primery_main text-2xl font-normal  font-['Montserrat']">Campaign</div>
+                </div>
+                <div class="flex-col justify-start items-start gap-1 flex">
+                <div class="text-lg font-light leading-normal md:text-xl">年末年始シーズンのキャンペーン！<br/>Amazon Payでお支払いのお客様対象に<br/>抽選で50名様にAmazonギフトカード</div>
+                <div class="text-text-Primery_red text-2xl font-black leading-[38.40px]">10,000円分をプレゼント！</div>
+                <div class="text-sm font-bold leading-loose md:text-xl">2023年12月1日(金) 00:00～2024年1月16日(火)</div>
+                </div>
+                </div>
+                <img class="mt-4" src="./AmazonCp202311-img/present.svg" alt="">
+                </div>
+        </div>
+
+        <div class="section">
+            <div class="px-4 py-10 md:py-16 md:px-24 bg-white flex-col justify-start items-center gap-8 md:rounded-3xl">
+                <div class="self-stretchflex-col justify-center items-start gap-4">
+                    <div class="self-stretch flex-col justify-start items-start flex">
+                        <div class=" text-[32px] md:text-[48px] font-bold">応募条件</div>
+                        <div class="text-text-Primery_main text-2xl font-normal font-['Montserrat'] leading-[28.80px]">Apply</div>
+                    </div>
+                    <div class="self-stretch flex-col justify-center items-start flex pt-2">
+                        <div class="self-stretch  text-xl font-light leading-9">キャンペーン期間中に以下の条件を満たしたお客様が対象となります。</div>
+                        <div class="self-stretch  text-[15px] font-light leading-[27px]">※さくらトラベル会員にログインされずに購入された方や、途中でキャンセルされた方はキャンペーン適応対象外となります。</div>
+                    </div>
+                </div>
+                <div class="flex-col justify-start items-start gap-8 flex md:flex-row mt-3 md:pt-6">
+                    <div class="self-stretch py-12 bg-white rounded-3xl shadow border-2 flex-col justify-center items-center gap-4 flex md:w-[380px] card">
+                        <div class="text-center md:text-lg">お支払方法を<span class="text-text-Primery_red">Amazon Payで決済</span></div>
+                        <img src="./AmazonCp202311-img/shopping.svg" class="h-[200px]" alt="">
+                    </div>
+                    <div class="self-stretch py-12 bg-white rounded-3xl shadow border-2 border-text-Primery_main flex-col justify-center items-center gap-4 flex  md:w-[380px] card">
+                        <div class="text-center">さくらトラベル会員に<span class="text-text-Primery_red">ログインをした状態で</span><br/>キャンペーン対象商品をご購入されたお客様</div>
+                        <img src="./AmazonCp202311-img/purchase.svg" class="h-[200px]" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="setion">
+            <div class="px-4 py-16 flex-col justify-start items-start gap-6 inline-flex">
+                <div class="self-stretch h-14 flex-col justify-start items-start flex">
+                    <div class="self-stretch text-xl font-bold">対象商品</div>
+                    <div class="self-stretch  text-base font-light  leading-relaxed">国内航空券</div>
+                </div>
+                <div class="self-stretch h-14 flex-col justify-start items-start flex">
+                    <div class="self-stretch text-xl font-bold ">応募方法</div>
+                    <div class="self-stretch  text-base font-light  leading-relaxed">自動エントリーとなります。</div>
+                </div>
+                <div class="self-stretch flex-col justify-start items-start flex">
+                    <div class="self-stretch  text-xl font-bold">キャンペーン期間</div>
+                    <div class="self-stretch  text-base font-light leading-relaxed">2023年12月1日(金) 00:00～2024年1月16日(火) 23:59ご決済分まで</div>
+                </div>
+                <div class="self-stretch flex-col justify-start items-start flex">
+                    <div class="self-stretch  text-xl font-bold">当選案内</div>
+                    <div class="self-stretch text-base font-light  leading-relaxed">ご当選されたお客様には、2024年02月29日(木)までに登録されているメールアドレス宛に当選案内のメールと、Amazonギフトカードをお送りいたします。</div>
+                </div>
+                <div class="self-stretch flex-col justify-start items-start flex">
+                    <div class="self-stretch  text-xl font-bold">注意事項</div>
+                    <div class="self-stretch  text-base font-light  leading-relaxed">お一人様1回限り有効です。 抽選方法や当選結果についてのお問い合わせにはお答えできかねます。ご了承ください。<br/>本キャンペーンは予告なく終了する場合がございます。<br/>ご当選された賞品の交換、およびご当選権利の譲渡はできません。<br/>ご当選されたお客様へのAmazonギフトカードは web@sakuratravel.jpよりお送りします。メール受信拒否設定（ドメイン指定受信）を設定している場合は、web@sakuratravel.jpからのメールを受信できるよう設定してください。<br/>当社の責によらない事由により当選メッセージを受信又は確認できないことから発生した不利益については、当社では一切の責任を負いません。<br/>応募者が、本キャンペーンに応募するための費用（インターネット通信料・接続料等）は全て応募者のご負担になります。<br/>本キャンペーンは、株式会社さくらトラベルによる提供です。本キャンペーンのお問合せはAmazonでは受け付けておりません。<br/>※Amazon、Amazon Payおよび関連するすべてのロゴは、 Amazon.com, Inc. またはその関連会社の商標です。</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
